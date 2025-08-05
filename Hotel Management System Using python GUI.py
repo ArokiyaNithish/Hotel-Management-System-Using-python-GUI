@@ -4,7 +4,7 @@ import mysql.connector
 
 # Connecting to MySQL database
 try:
-    con = mysql.connector.connect(host="localhost", user="root", password="Arokiya41@", database="db")
+    con = mysql.connector.connect(host="localhost", user="User Name", password="Password", database="Database Name")
     print("Database is Connected")
 except mysql.connector.Error as err:
     print("Database connection failed:", err)
@@ -139,3 +139,4 @@ Button(root, text="Delete Data", command=delete_data).grid(row=6, column=0, pady
 Button(root, text="Clear Fields", command=clear_fields).grid(row=6, column=1)
 
 root.mainloop()
+
